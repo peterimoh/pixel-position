@@ -10,8 +10,8 @@ class Job extends Model
 {
     use HasFactory;
 
-//    public function employer():HasOne
-//    {
-//
-//    }
+    public function employer(): HasOne
+    {
+        return $this->belongsTo(Employer::class);
+    }
 }
